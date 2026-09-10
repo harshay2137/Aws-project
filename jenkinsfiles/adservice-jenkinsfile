@@ -2,9 +2,9 @@ pipeline {
     agent any 
 
     environment {
-        GIT_REPO_NAME = "micro-service"
-        GIT_EMAIL = "gsharma1298@gmail.com"
-        GIT_USER_NAME = "gsharma1298"
+        GIT_REPO_NAME = "Aws-project"
+        GIT_EMAIL = "YOUR_EMAIL@example.com"
+        GIT_USER_NAME = "harshay2137"
         IMAGE_NAME = "adservice"
         REPO_URL = "578133113275.dkr.ecr.ap-south-1.amazonaws.com/adservice"
         YAML_FILE = "adservice.yaml"
@@ -20,7 +20,7 @@ pipeline {
 
         stage('Checkout from Git') {
             steps {
-                git branch: 'master', url: 'https://github.com/gsharma1298/micro-service.git'
+                git branch: 'main', url: 'https://github.com/harshay2137/Aws-project.git'
             }
         }
 
